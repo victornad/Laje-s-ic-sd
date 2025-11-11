@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laje’s - Projeto IC + SD</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Laje’s - Projeto IC + SD</h1>
+    <p>Documentação do projeto desenvolvido para as disciplinas de Introdução à Computação e Sistemas Digitais (CESAR School)</p>
+    <nav>
+      <ul>
+        <li><a href="#descricao">Descrição</a></li>
+        <li><a href="#autores">Autores</a></li>
+        <li><a href="#componentes">Componentes</a></li>
+        <li><a href="#codigo">Código</a></li>
+        <li><a href="#problemas">Lições</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Nome do Projeto -->
+    <section id="nome-projeto">
+      <h2>1. Nome do Projeto</h2>
+      <p><strong>Laje’s</strong></p>
+    </section>
+
+    <!-- 2. Descrição do Projeto -->
+    <section id="descricao">
+      <h2>2. Descrição do Projeto</h2>
+
+      <h3>Motivação</h3>
+      <p>Explique aqui por que o projeto é importante.</p>
+
+      <h3>Objetivo</h3>
+      <p>Descreva o que o projeto visa alcançar.</p>
+
+      <h3>Contextualização</h3>
+      <p>Contextualize brevemente a área de aplicação.</p>
+
+      <h3>Esquema Conceitual</h3>
+      <img src="assets/images/esquema.png" alt="Esquema conceitual do projeto" class="imagem-centralizada" />
+    </section>
+
+    <!-- 3. Palavras-chave -->
+    <section id="palavras-chave">
+      <h2>3. Palavras-chave</h2>
+      <ul>
+        <li>Hardware</li>
+        <li>Arduino</li>
+        <li>Sensor</li>
+        <li>Automação</li>
+      </ul>
+    </section>
+
+    <!-- 4. Autores -->
+    <section id="autores">
+      <h2>4. Autores</h2>
+      <div class="autores-container">
+        <div class="autor">
+          <img src="assets/images/autor1.jpg" alt="Foto do autor 1">
+          <h3>Nome do Autor 1</h3>
+          <p>
+            <a href="https://github.com/usuario1" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/usuario1" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <div class="autor">
+          <img src="assets/images/autor2.jpg" alt="Foto do autor 2">
+          <h3>Nome do Autor 2</h3>
+          <p>
+            <a href="https://github.com/usuario2" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/usuario2" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Componentes e Suprimentos -->
+    <section id="componentes">
+      <h2>5. Componentes e Suprimentos</h2>
+      <ul>
+        <li>Arduino Uno – responsável pelo controle do sistema</li>
+        <li>Sensor ultrassônico – mede a distância</li>
+        <li>Protoboard e jumpers – montagem dos circuitos</li>
+        <li>LEDs – sinalização visual</li>
+      </ul>
+    </section>
+
+    <!-- 6. Aplicativos e Plataformas -->
+    <section id="ferramentas">
+      <h2>6. Aplicativos e Plataformas</h2>
+      <ul>
+        <li>Arduino IDE – versão 2.3.2</li>
+        <li>Visual Studio Code – versão 1.93</li>
+        <li>GitHub – hospedagem do código e do site</li>
+      </ul>
+    </section>
+
+    <!-- 7. Passo a passo -->
+    <section id="passo-a-passo">
+      <h2>7. Passo a passo da Montagem</h2>
+      <ol>
+        <li>Monte o circuito conforme o esquema abaixo.</li>
+        <img src="assets/images/montagem.jpg" alt="Etapa de montagem do circuito">
+        <li>Conecte o Arduino ao computador e carregue o código.</li>
+        <li>Execute o teste do sistema verificando as respostas dos sensores.</li>
+      </ol>
+    </section>
+
+    <!-- 8. Código -->
+    <section id="codigo">
+      <h2>8. Código</h2>
+      <pre><code>
+// Exemplo simples de código Arduino
+int led = 13;
+void setup() {
+  pinMode(led, OUTPUT);
+}
+void loop() {
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);
+}
+      </code></pre>
+      <p>Veja o código completo no <a href="https://github.com/victornad/Laje-s-ic-sd" target="_blank">repositório no GitHub</a>.</p>
+    </section>
+
+    <!-- 9. Download -->
+    <section id="download">
+      <h2>9. Download do Projeto</h2>
+      <a class="botao" href="assets/files/Lajes-projeto.zip" download>Baixar Projeto Completo (.zip)</a>
+    </section>
+
+    <!-- 10. Vídeo no YouTube -->
+    <section id="video">
+      <h2>10. Vídeo no YouTube</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_ID" title="Vídeo explicativo do projeto" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- 11. Problemas e Lições -->
+    <section id="problemas">
+      <h2>11. Problemas Enfrentados e Lições Aprendidas</h2>
+      <h3>Desafios</h3>
+      <p>Descreva aqui os principais problemas enfrentados durante o desenvolvimento.</p>
+      <h3>Lições Aprendidas</h3>
+      <p>Comente o que a equipe aprendeu ao longo do processo.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 - Laje’s | Projeto IC + SD | CESAR School</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
