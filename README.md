@@ -9,15 +9,16 @@ Este site documenta todo o processo de criação, montagem e funcionamento do pr
 ---
 
 ## 📘 Sobre o Projeto
+Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força de Peteleco - Flick Force" 💥
 
-### 🎯 Motivação
-Descreva aqui **por que o projeto foi criado** — o problema ou necessidade que ele busca resolver.
+### 💡 Motivação
+Mostrar como a tecnologia pode transformar uma brincadeira em aprendizado e curiosidade científica.
 
-### 🧭 Objetivo
-Explique **qual é o propósito principal** do projeto e **quais resultados** ele busca alcançar.
+### 🎯 Objetivo
+Criar um sistema que mede a força de um peteleco, unindo interação, física e eletrônica.
 
 ### 🌍 Contextualização
-Apresente o **contexto e a área de aplicação** (por exemplo: automação residencial, acessibilidade, sustentabilidade, etc).
+Aplicado na área de eletrônica e educação, o projeto torna o estudo de impactos mais simples e divertido.
 
 ---
 
