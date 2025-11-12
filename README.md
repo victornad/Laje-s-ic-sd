@@ -1,6 +1,6 @@
 # 🧱 Laje’s — Projeto IC + SD (CESAR School)
 
-Projeto desenvolvido para as disciplinas de **Introdução à Computação** e **Sistemas Digitais**, na **CESAR School** (período 2024.2).  
+◈ Projeto desenvolvido para as disciplinas de **Introdução à Computação** e **Sistemas Digitais**, na **CESAR School** (período 2024.2).  
 Este site documenta todo o processo de criação, montagem e funcionamento do projeto **Laje’s**, reunindo descrição, código, componentes, aprendizados e vídeo demonstrativo.
 
 🔗 **Acesse o site do projeto:**  
@@ -12,13 +12,13 @@ Este site documenta todo o processo de criação, montagem e funcionamento do pr
 Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força de Peteleco - Flick Force" 💥
 
 ### 💡 Motivação
-Mostrar como a tecnologia pode transformar uma brincadeira em aprendizado e curiosidade científica.
+➤ Mostrar como a tecnologia pode transformar uma brincadeira em aprendizado e curiosidade científica.
 
 ### 🎯 Objetivo
-Criar um sistema que mede a força de um peteleco, unindo interação, física e eletrônica.
+➤ Criar um sistema que mede a força de um peteleco, unindo interação, física e eletrônica.
 
 ### 🌍 Contextualização
-Aplicado na área de eletrônica e educação, o projeto torna o estudo de impactos mais simples e divertido.
+➤ Aplicado na área de eletrônica e educação, o projeto torna o estudo de impactos mais simples e divertido.
 
 ---
 
