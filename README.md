@@ -45,11 +45,15 @@ Aplicado na área de eletrônica e educação, o projeto torna o estudo de impac
 
 | Componente | Descrição |
 |-------------|------------|
-| Arduino Uno | Microcontrolador responsável pelo controle principal |
-| Sensor Ultrassônico | Mede a distância entre o objeto e o sensor |
-| Protoboard e Jumpers | Usados para montagem e conexão dos componentes |
-| LEDs | Indicadores visuais do estado do sistema |
-| Resistores | Controlam a corrente elétrica dos LEDs |
+| 1x Placa Arduino UNO | Microcontrolador responsável pelo controle principal |
+| 1x Sensor Ultrassônico | Mede a distância entre o objeto e o sensor |
+| 1x Protoboard e Jumpers | Usados para montagem e conexão dos componentes |
+| 3x LEDs | Indicadores visuais do estado do sistema |
+| 3x Resistores de 300Ω | Controlam a corrente elétrica dos LEDs |
+| 1x Displey de 7 segmentos | Mostrar números (como relógios, calculadoras, medidores) |
+| 1x Buzzer | Emite sons ou alertas sonoros |
+| 1x Cabo USB | Usado para energia e troca de dados entre dispositivos |
+| Impressora 3D | Cria objetos físicos a partir de modelos digitais |
 
 ---
 
