@@ -36,7 +36,7 @@ Aplicado na área de eletrônica e educação, o projeto torna o estudo de impac
 
 | Nome | GitHub | LinkedIn |
 |------|--------|----------|
-| Luis Carlos Barros Galliza Gomes | [@luisgalliza]([https://github.com/usuario1](https://github.com/luisgalliza)) | [LinkedIn](https://linkedin.com/in/usuario1) |
+| Luis Carlos Barros Galliza Gomes | [@luisgalliza](https://github.com/usuario1](https://github.com/luisgalliza)) | [LinkedIn](https://linkedin.com/in/usuario1) |
 | Nome do Autor 2 | [@usuario2](https://github.com/usuario2) | [LinkedIn](https://linkedin.com/in/usuario2) |
 
 ---
