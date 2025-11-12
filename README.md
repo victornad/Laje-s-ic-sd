@@ -37,7 +37,12 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | Nome | GitHub | LinkedIn |
 |------|--------|----------|
 | Luis Carlos Barros Galliza Gomes | [@luisgalliza](https://github.com/luisgalliza) | [LinkedIn](https://linkedin.com/in/usuario1) |
-| Nome do Autor 2 | [@usuario2](https://github.com/usuario2) | [LinkedIn](https://linkedin.com/in/usuario2) |
+| Victor de Lavor Nadler da Silva | [@usuario2](https://github.com/usuario2) | [LinkedIn](https://linkedin.com/in/usuario2) |
+| João Pedro Castro Monte Teixeira | [@jpcmt-eng](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario3) |
+| Maria Luísa Dijck Muniz | [@usario4](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario4) |
+| Mateus Xavier Ramos Rocha | [@usario5](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario5) |
+| Rubens Sousa Carvalho da Rocha | [@usario6](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario6) |
+| Kaio Cerqueira Santos da Silva | [@usario7](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario7) |
 
 ---
 
