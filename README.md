@@ -40,8 +40,8 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | Victor de Lavor Nadler da Silva | [@usuario2](https://github.com/usuario2) | [LinkedIn](https://linkedin.com/in/usuario2) |
 | João Pedro Castro Monte Teixeira | [@jpcmt-eng](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario3) |
 | Maria Luísa Dijck Muniz | [@usario4](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario4) |
-| Mateus Xavier Ramos Rocha | [@usario5](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario5) |
-| Rubens Sousa Carvalho da Rocha | [@usario6](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario6) |
+| Mateus Xavier Ramos Rocha | [@mateusxavier](https://github.com/mateusxavierr) | [LinkedIn](https://www.linkedin.com/in/mateus-xavier-25265a340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
+| Rubens Sousa Carvalho da Rocha | [@rubensmontreal-blip](https://github.com/rubensmontreal-blip) | [LinkedIn](https://linkedin.com/in/usuario6) |
 | Kaio Cerqueira Santos da Silva | [@usario7](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario7) |
 
 ---
