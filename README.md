@@ -51,11 +51,11 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | Componente | Descrição |
 |-------------|------------|
 | 1x Placa Arduino UNO | Microcontrolador responsável pelo controle principal |
-| 1x Sensor Ultrassônico | Mede a distância entre o objeto e o sensor |
+| 1x Sensor de Batida Piezo | Transforma a batida em um sinal elétrico que o sistema pode interpretar. |
 | 1x Protoboard e Jumpers | Usados para montagem e conexão dos componentes |
-| 3x LEDs | Indicadores visuais do estado do sistema |
+| 3x LEDs (vermelha, amarela, verde) | Indicadores visuais do estado do sistema |
 | 3x Resistores de 300Ω | Controlam a corrente elétrica dos LEDs |
-| 1x Displey de 7 segmentos | Mostrar números (como relógios, calculadoras, medidores) |
+| 1x Displey LCD | Mostra os números. A “tela” onde o dispositivo mostra os dados de forma clara e visual. |
 | 1x Buzzer | Emite sons ou alertas sonoros |
 | 1x Cabo USB | Usado para energia e troca de dados entre dispositivos |
 | Impressora 3D | Cria objetos físicos a partir de modelos digitais |
