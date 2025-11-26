@@ -6,43 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Código</title>
     <link rel="stylesheet" href="../Laje-s-ic-sd/assets/css/styles.css">
-
 </head>
 
 <body>
-    <nav>
-        <a href="./autores.html">autores</a>
-        <a href="./componentes.html">Componentes</a>
-        <a href="./descricao.html">Descrição</a>
-        <a href="./download.html">Download</a>
-        <a href="./montagem.html">Montagem</a>
-        <a href="./index.html">Home</a>
-    </nav>
-    codigos
 
-    <H1>MATEUS ROCHA</H1>
-    <!-- 8. Código -->
-    <section id="codigo">
-        <h2>8. Código</h2>
-        <pre><code>
+    <header>
+        <nav class="underline-nav">
+            <a href="./autores.html">Autores</a>
+            <a href="./codigo.html">Código</a>
+            <a href="./componentes.html">Componentes</a>
+            <a href="./descricao.html">Descrição</a>
+            <a href="./download.html">Download</a>
+            <a href="./montagem.html">Montagem</a>
+            <a href="./index.html">Home</a>
+        </nav>
+        <h1>CÓDIGO FONTE</h1>
+    </header>
+
+    <main>
+        <section id="codigo">
+            <h2>8. Exemplo do Código Arduino</h2>
+            <p>Abaixo está um trecho ilustrativo da lógica utilizada. O estilo visual abaixo facilita a leitura como em uma IDE.</p>
+
+            <pre><code>
 // Exemplo simples de código Arduino
 int led = 13;
+
 void setup() {
   pinMode(led, OUTPUT);
 }
+
 void loop() {
   digitalWrite(led, HIGH);
   delay(1000);
   digitalWrite(led, LOW);
   delay(1000);
 }
-      </code></pre>
-        <p>Veja o código completo no <a href="https://github.com/victornad/Laje-s-ic-sd" target="_blank">repositório no
-                GitHub</a>.</p>
-    </section>
+            </code></pre>
 
+            <p style="margin-top: 20px;">
+                <strong>Quer ver tudo?</strong><br>
+                Acesse o código completo e atualizado no nosso 
+                <a href="https://github.com/victornad/Laje-s-ic-sd" target="_blank" style="color: #d2691e; font-weight: bold;">repositório no GitHub</a>.
+            </p>
+        </section>
+    </main>
 
+    <footer>
+        <p>© 2024 - Laje’s | Projeto IC + SD | CESAR School</p>
+    </footer>
 
-</body>
 
 </html>
