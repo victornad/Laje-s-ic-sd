@@ -6,37 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Montagem</title>
     <link rel="stylesheet" href="../Laje-s-ic-sd/assets/css/styles.css">
-
 </head>
 
 <body>
-    <nav>
-        <a href="./autores.html">autores</a>
-        <a href="./codigo.html">Código</a>
-        <a href="./componentes.html">Componentes</a>
-        <a href="./descricao.html">Descrição</a>
-        <a href="./download.html">Download</a>
-        <a href="./index.html">Home</a>
-    </nav>
-    passo a passo do projeto
-<h1>RUBENS</h1>
-    <!-- 7. Passo a passo -->
-    <section id="passo-a-passo">
-        <h2>7. Passo a passo da Montagem</h2>
-        <ol>
-            <li>Monte o circuito conforme o esquema abaixo.</li>
-            <img src="assets/images/montagem.jpg" alt="Etapa de montagem do circuito">
-            <li>Conecte o Arduino ao computador e carregue o código.</li>
-            <li>Execute o teste do sistema verificando as respostas dos sensores.</li>
-        </ol>
-    </section>
 
+    <header>
+        <nav class="underline-nav">
+            <a href="./autores.html">Autores</a>
+            <a href="./codigo.html">Código</a>
+            <a href="./componentes.html">Componentes</a>
+            <a href="./descricao.html">Descrição</a>
+            <a href="./download.html">Download</a>
+            <a href="./montagem.html">Montagem</a>
+            <a href="./index.html">Home</a>
+        </nav>
+        <h1>PASSO A PASSO DA MONTAGEM</h1>
+    </header>
 
+    <main>
+        <section id="passo-a-passo">
+            <h2>7. Montando o Circuito</h2>
+            <p>Siga a ordem abaixo para garantir o funcionamento correto do hardware:</p>
+            
+            <ol style="text-align: left; margin: 0 auto; display: inline-block; max-width: 100%;">
+                <li>
+                    <strong>Montagem Física:</strong> Monte o circuito na protoboard conforme o esquema.
+                    <br>
+                    <img src="assets/images/montagem.jpg" alt="Etapa de montagem do circuito" style="margin-top: 10px; border: 2px solid #eee;">
+                </li>
+                <li style="margin-top: 15px;"><strong>Conexão:</strong> Conecte o Arduino ao computador via cabo USB e carregue o código utilizando a IDE.</li>
+                <li style="margin-top: 10px;"><strong>Testes:</strong> Execute o teste do sistema verificando se o sensor responde aos estímulos e se os LEDs acendem.</li>
+                <li style="margin-top: 10px;"><strong>Ajustes Finais:</strong> Ajuste os valores de sensibilidade e tempos de resposta no código conforme a necessidade prática.</li>
+            </ol>
+        </section>
+    </main>
 
-
-
-
-
-</body>
+    <footer>
+        <p>© 2024 - Laje’s | Projeto IC + SD | CESAR School</p>
+    </footer>
 
 </html>
