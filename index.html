@@ -6,55 +6,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Laje´s</title>
   <link rel="stylesheet" href="../Laje-s-ic-sd/assets/css/styles.css">
+
+  <style>
+    /* Organiza os 3 tópicos (Motivação, Objetivo, Contexto) em colunas */
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-left: 5px solid #d2691e; /* Detalhe na cor da identidade */
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 250px; /* Flexível: mínimo 250px de largura */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #d2691e;
+      font-size: 1.2rem;
+    }
+
+    /* Estilo para as Palavras-chave virarem "Etiquetas/Tags" */
+    .tags-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+
+    .tag {
+      background-color: #d2691e; /* Cor principal */
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px; /* Borda redonda estilo pílula */
+      font-size: 0.9rem;
+      font-weight: bold;
+      transition: transform 0.2s;
+    }
+
+    .tag:hover {
+      transform: scale(1.05); /* Efeito leve ao passar o mouse */
+      background-color: #a0522d;
+    }
+
+    /* Melhoria no menu interno */
+    .internal-menu ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+      list-style: none;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    
+    .internal-menu a {
+      color: #8b4513;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-bottom: 1px dotted #8b4513;
+    }
+    
+    .internal-menu a:hover {
+      color: #d2691e;
+      border-bottom: 1px solid #d2691e;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-<nav class="underline-nav">
-  <a href="./autores.html">Autores</a>
-  <a href="./codigo.html">Código</a>
-  <a href="./componentes.html">Componentes</a>
-  <a href="./descricao.html">Descrição</a>
-  <a href="./download.html">Download</a>
-  <a href="./montagem.html">Montagem</a>
-</nav>
-
+    <nav class="underline-nav">
+      <a href="./index.html">Home</a>
+      <a href="./autores.html">Autores</a>
+      <a href="./componentes.html">Componentes</a>
+      <a href="./montagem.html">Montagem</a>
+      <a href="./codigo.html">Código</a>
+      <a href="./extras.html">Extras</a>
+    </nav>
 
     <h1>Laje’s - Projeto IC + SD</h1>
-    <p>Documentação do projeto desenvolvido para as disciplinas de Introdução à Computação e Sistemas Digitais (CESAR
-      School)</p>
-    <nav>
-      <ul>
-        <li><a href="#descricao">Descrição</a></li>
-        <li><a href="#autores">Autores</a></li>
-        <li><a href="#componentes">Componentes</a></li>
-        <li><a href="#codigo">Código</a></li>
-        <li><a href="#problemas">Lições</a></li>
-      </ul>
-    </nav>
+    <p style="max-width: 700px; margin: 0 auto;">
+      Documentação do projeto desenvolvido para as disciplinas de Introdução à Computação e Sistemas Digitais (CESAR School)
+    </p>
   </header>
 
   <main>
-    <!-- 1. Nome do Projeto -->
-    <section id="nome-projeto">
-      <h2>1. Nome do Projeto</h2>
-      <p><strong>Laje’s</strong></p>
+    <section id="nome-projeto" style="text-align: center; border-bottom: 2px dashed #f4a460; padding-bottom: 20px; margin-bottom: 30px;">
+      <h2 style="font-size: 2.5rem; color: #d2691e; margin: 10px 0;">1. Nome do Projeto: LAJE’S</h2>
+      <p>Medidor de Força de Peteleco</p>
     </section>
 
+    <section id="descricao">
+        <h2 style="text-align: center; margin-bottom: 30px;">2. Descrição do Projeto</h2>
+        
+        <div class="cards-container">
+          <div class="card">
+            <h3>💡 Motivação</h3>
+            <p>Demonstrar como a tecnologia pode transformar uma brincadeira simples em uma ferramenta de aprendizado e curiosidade científica.</p>
+          </div>
 
-    <!-- 3. Palavras-chave -->
-    <section id="palavras-chave">
+          <div class="card">
+            <h3>🎯 Objetivo</h3>
+            <p>Criar um sistema interativo capaz de medir a força de um peteleco, unindo conceitos de interação física e eletrônica digital.</p>
+          </div>
+
+          <div class="card">
+            <h3>🌍 Contextualização</h3>
+            <p>Inserido nas áreas de eletrônica e educação, o projeto visa tornar o estudo de grandezas físicas (impacto) mais acessível e divertido.</p>
+          </div>
+        </div>
+
+        <div id="esquema" style="text-align: center; margin-top: 40px; background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #444;">🧩 Esquema Conceitual</h3>
+          <p style="font-size: 0.9rem;">Conexão lógica entre os componentes do artefato:</p>
+          <img src="assets/images/esquema.png" alt="Esquema conceitual do projeto" style="max-width: 100%; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+    </section>
+
+    <section id="palavras-chave" style="margin-top: 40px; text-align: center;">
       <h2>3. Palavras-chave</h2>
-      <ul>
-        <li>Hardware</li>
-        <li>Arduino</li>
-        <li>Sensor</li>
-        <li>Automação</li>
+      <ul class="tags-container">
+        <li class="tag">#Hardware</li>
+        <li class="tag">#Arduino</li>
+        <li class="tag">#Sensor</li>
+        <li class="tag">#Automação</li>
+        <li class="tag">#SistemasDigitais</li>
       </ul>
     </section>
 
+  </main>
 
-  </main> <footer>
+  <footer>
     <p>© 2024 - Laje’s | Projeto IC + SD | CESAR School</p>
   </footer>
 
