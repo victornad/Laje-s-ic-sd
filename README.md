@@ -1,6 +1,6 @@
 # 🧱 Laje’s — Projeto IC + SD (CESAR School)
 
-◈ Projeto desenvolvido para as disciplinas de **Introdução à Computação** e **Sistemas Digitais**, na **CESAR School** (período 2024.2).  
+◈ Projeto desenvolvido para as disciplinas de **Introdução à Computação** e **Sistemas Digitais**, na **CESAR School** (período 2025.2).  
 Este site documenta todo o processo de criação, montagem e funcionamento do projeto **Laje’s**, reunindo descrição, código, componentes, aprendizados e vídeo demonstrativo.
 
 🔗 **Acesse o site do projeto:**  
@@ -23,7 +23,8 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 ---
 
 ## 🧩 Esquema Conceitual
-<img src="assets/images/esquema.png" width="600px" alt="Esquema conceitual do projeto">
+<img src="![Prótotipo Flick Force - Canva](https://github.com/user-attachments/assets/ecf3c75d-b05c-437f-83b3-e3f2ce464dc5)
+" width="600px" alt="Esquema conceitual do projeto">
 
 ---
 
@@ -39,7 +40,7 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | Luis Carlos Barros Galliza Gomes | [@luisgalliza](https://github.com/luisgalliza) | [LinkedIn](https://linkedin.com/in/usuario1) |
 | Victor de Lavor Nadler da Silva | [@victornad](https://github.com/victornad) | [LinkedIn](https://linkedin.com/in/usuario2) |
 | João Pedro Castro Monte Teixeira | [@jpcmt-eng](https://github.com/jpcmt-eng) | [LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-pedro-castro-monte-teixeira-94a55730a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
-| Maria Luísa Dijck Muniz | [@mldm2-art](https://github.com/mldm2-art) | [LinkedIn](https://linkedin.com/in/usuario4) |
+| Maria Luísa Dijck Muniz | [@mldm2-art](https://github.com/mldm2-art) | [LinkedIn]([https://linkedin.com/in/usuario4](https://www.linkedin.com/in/maria-luísa-muniz?utm_source=share_via&utm_content=profile&utm_medium=member_ios)) |
 | Mateus Xavier Ramos Rocha | [@mateusxavier](https://github.com/mateusxavierr) | [LinkedIn](https://www.linkedin.com/in/mateus-xavier-25265a340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
 | Rubens Sousa Carvalho da Rocha | [@rubensmontreal-blip](https://github.com/rubensmontreal-blip) | [LinkedIn](https://linkedin.com/in/usuario6) |
 | Kaio Cerqueira Santos da Silva | [@usario7](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario7) |
@@ -52,13 +53,12 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 |-------------|------------|
 | 1x Placa Arduino UNO | Microcontrolador responsável pelo controle principal |
 | 1x Sensor de Batida Piezo | Transforma a batida em um sinal elétrico que o sistema pode interpretar. |
-| 1x Protoboard e Jumpers | Usados para montagem e conexão dos componentes |
-| 3x LEDs (vermelha, amarela, verde) | Indicadores visuais do estado do sistema |
+| 1x Protoboard | Permite montar e testar circuitos eletrônicos sem solda, de forma rápida e reutilizável |
+| x Jumpers | Servem para ligar pontos do circuito na protoboard, permitindo conectar componentes entre si de forma rápida e organizada |
 | 3x Resistores de 300Ω | Controlam a corrente elétrica dos LEDs |
 | 1x Displey LCD | Mostra os números. A “tela” onde o dispositivo mostra os dados de forma clara e visual. |
 | 1x Buzzer | Emite sons ou alertas sonoros |
 | 1x Cabo USB | Usado para energia e troca de dados entre dispositivos |
-| Impressora 3D | Cria objetos físicos a partir de modelos digitais |
 
 ---
 
