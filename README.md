@@ -15,7 +15,7 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 ➤ Mostrar como a tecnologia pode transformar uma brincadeira em aprendizado e curiosidade científica.
 
 ### 🎯 Objetivo
-➤ Criar um sistema que mede a força de um peteleco, unindo interação, física e eletrônica.
+➤ Criar um sistema que mede a força de um peteleco, unindo interação, física, geometria e eletrônica.
 
 ### 🌍 Contextualização
 ➤ Aplicado na área de eletrônica e educação, o projeto torna o estudo de impactos mais simples e divertido.
@@ -74,10 +74,8 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 
 1. Monte o circuito conforme o esquema conceitual acima.  
 2. Conecte o Arduino ao computador e carregue o código.  
-3. Teste o funcionamento dos sensores e LEDs.  
+3. Teste o funcionamento dos sensores.  
 4. Ajuste os valores e tempos de resposta conforme a necessidade.
-
-📸 *Adicione imagens de cada etapa na pasta `/assets/images`.*
 
 ---
 
