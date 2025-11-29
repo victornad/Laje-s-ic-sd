@@ -54,8 +54,7 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | 1x Placa Arduino UNO | Microcontrolador responsável pelo controle principal |
 | 1x Sensor de Batida Piezo | Transforma a batida em um sinal elétrico que o sistema pode interpretar. |
 | 1x Protoboard | Permite montar e testar circuitos eletrônicos sem solda, de forma rápida e reutilizável |
-| x Jumpers | Servem para ligar pontos do circuito na protoboard, permitindo conectar componentes entre si de forma rápida e organizada |
-| 3x Resistores de 300Ω | Controlam a corrente elétrica dos LEDs |
+| 12x Jumpers | Servem para ligar pontos do circuito na protoboard, permitindo conectar componentes entre si de forma rápida e organizada |
 | 1x Displey LCD | Mostra os números. A “tela” onde o dispositivo mostra os dados de forma clara e visual. |
 | 1x Buzzer | Emite sons ou alertas sonoros |
 | 1x Cabo USB | Usado para energia e troca de dados entre dispositivos |
@@ -87,15 +86,6 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 Trecho de exemplo:
 
 ```c
-int led = 13;
-
-void setup() {
-  pinMode(led, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(led, HIGH);
-  delay(1000);
-  digitalWrite(led, LOW);
-  delay(1000);
-}
+#include <Wire.h> #include 
+<LiquidCrystal_I2C.h> 
+LiquidCrystal_I2C lcd(0x27, 16, 2); // PINOS int sensorPin = A0; int buzzer = 9; // AJUSTES int minimoImpacto = 80; // sensibilidade do piezo int maxLeitura = 1023; // valor máximo do analógico // RECORDE (0 a 999) int recorde = 0; // -------------------- SOM DE RECORDE (GANHO / APOSTA) -------------------- void somDeRecorde() { tone(buzzer, 500, 120); delay(130); tone(buzzer, 650, 120); delay(130); tone(buzzer, 800, 140); delay(150); tone(buzzer, 950, 160); delay(170); tone(buzzer, 1100, 180); delay(190); tone(buzzer, 950, 120); delay(130); tone(buzzer, 1250, 260); delay(280); noTone(buzzer); } // -------------------- SOM NORMAL -------------------- void somNormal() { tone(buzzer, 600, 120); delay(140); tone(buzzer, 800, 150); delay(170); noTone(buzzer); } // -------------------- MOSTRAR VALOR COM 3 DÍGITOS -------------------- void print3dig(int valor) { if (valor < 10) lcd.print("00"); else if (valor < 100) lcd.print("0"); lcd.print(valor); } // -------------------- TELA PADRÃO -------------------- void mostrarTelaRecorde() { lcd.clear(); lcd.setCursor(0, 0); lcd.print("FLICK FORCE"); lcd.setCursor(0, 1); lcd.print("REC: "); print3dig(recorde); } // -------------------- ANIMAÇÃO DO RECORDE SUBINDO -------------------- void animarNovoRecorde(int antigo, int novo) { lcd.clear(); lcd.setCursor(0, 0); lcd.print("NOVO RECORDE!"); for (int i = antigo; i <= novo; i++) { lcd.setCursor(0, 1); lcd.print("REC: "); print3dig(i); delay(15); // velocidade da animação (diminua pra ficar mais rápido) } } // -------------------- SETUP -------------------- void setup() { lcd.init(); lcd.backlight(); lcd.clear(); pinMode(buzzer, OUTPUT); lcd.setCursor(0, 0); lcd.print("FLICK FORCE"); delay(1500); mostrarTelaRecorde(); } // -------------------- LOOP -------------------- void loop() { int leitura = analogRead(sensorPin); if (leitura > minimoImpacto) { delay(60); // anti-ruído int nivelForca = map(leitura, minimoImpacto, maxLeitura, 0, 999); if (nivelForca < 0) nivelForca = 0; if (nivelForca > 999) nivelForca = 999; bool novoRecorde = false; int recordeAntigo = recorde; if (nivelForca > recorde) { recorde = nivelForca; novoRecorde = true; } // SOM if (novoRecorde) somDeRecorde(); else somNormal(); // TELA DO IMPACTO lcd.clear(); lcd.setCursor(0, 0); if (novoRecorde) lcd.print("NOVO RECORDE!"); else lcd.print("FORCA MEDIDA"); lcd.setCursor(0, 1); lcd.print("NIVEL: "); print3dig(nivelForca); delay(1500); // ANIMAÇÃO DO RECORDE SE FOR NOVO if (novoRecorde) { animarNovoRecorde(recordeAntigo, recorde); delay(800); } // VOLTA PARA TELA PADRÃO mostrarTelaRecorde(); } }
