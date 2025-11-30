@@ -43,7 +43,7 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | Maria Luísa Dijck Muniz | [@mldm2-art](https://github.com/mldm2-art) | [LinkedIn]([https://linkedin.com/in/usuario4](https://www.linkedin.com/in/maria-luísa-muniz?utm_source=share_via&utm_content=profile&utm_medium=member_ios)) |
 | Mateus Xavier Ramos Rocha | [@mateusxavier](https://github.com/mateusxavierr) | [LinkedIn](https://www.linkedin.com/in/mateus-xavier-25265a340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
 | Rubens Sousa Carvalho da Rocha | [@rubensmontreal-blip](https://github.com/rubensmontreal-blip) | [LinkedIn](https://linkedin.com/in/usuario6) |
-| Kaio Cerqueira Santos da Silva | [@usario7](https://github.com/jpcmt-eng) | [LinkedIn](https://linkedin.com/in/usuario7) |
+| Kaio Cerqueira Santos da Silva | [@kaiocerqueira]([https://github.com/jpcmt-eng](https://github.com/kaiocerqueira)) | [LinkedIn](www.linkedin.com/in/kaio-cerqueira-287b4b398) |
 
 ---
 
@@ -66,16 +66,19 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 - **Arduino IDE** – versão 2.3.2  
 - **Visual Studio Code** – versão 1.93  
 - **GitHub** – repositório e hospedagem do site  
-- **YouTube** – vídeo de demonstração do projeto  
+- **YouTube** – vídeo de demonstração do projeto
+- **Discord** - Meio de comunicação do grupo
 
 ---
 
 ## 🪜 Passo a Passo da Montagem
 
-1. Monte o circuito conforme o esquema conceitual acima.  
-2. Conecte o Arduino ao computador e carregue o código.  
-3. Teste o funcionamento dos sensores.  
-4. Ajuste os valores e tempos de resposta conforme a necessidade.
+1. Conexão com o Computador:
+- Conecte o Arduino ao computador utilizando um cabo USB. Em seguida, abra a IDE, selecione a porta correta e carregue o código no microcontrolador;
+2. Testes de Funcionamento:
+- Após o carregamento do programa, execute os testes do sistema, verificando se o sensor responde aos estímulos, se os dados são exibidos corretamente no display e se o buzzer emite os sinais sonoros;
+3. Ajustes Finais:
+- Realize os ajustes de sensibilidade do sensor e dos tempos de resposta diretamente no código, conforme a necessidade prática do projeto, garantindo precisão e confiabilidade.
 
 ---
 
