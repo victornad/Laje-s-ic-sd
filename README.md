@@ -43,7 +43,7 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | Maria Luísa Dijck Muniz | [@mldm2-art](https://github.com/mldm2-art) | [LinkedIn]([https://linkedin.com/in/usuario4](https://www.linkedin.com/in/maria-luísa-muniz?utm_source=share_via&utm_content=profile&utm_medium=member_ios)) |
 | Mateus Xavier Ramos Rocha | [@mateusxavier](https://github.com/mateusxavierr) | [LinkedIn](https://www.linkedin.com/in/mateus-xavier-25265a340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) |
 | Rubens Sousa Carvalho da Rocha | [@rubensmontreal-blip](https://github.com/rubensmontreal-blip) | [LinkedIn](https://linkedin.com/in/usuario6) |
-| Kaio Cerqueira Santos da Silva | [@kaiocerqueira]([https://github.com/jpcmt-eng](https://github.com/kaiocerqueira)) | [LinkedIn](www.linkedin.com/in/kaio-cerqueira-287b4b398) |
+| Kaio Cerqueira Santos da Silva | [@kaiocerqueira](https://github.com/kaiocerqueira) | [LinkedIn](www.linkedin.com/in/kaio-cerqueira-287b4b398) |
 
 ---
 
