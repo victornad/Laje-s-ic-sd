@@ -2,58 +2,234 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código</title>
-    <link rel="stylesheet" href="../Laje-s-ic-sd/assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código</title>
+  <link rel="stylesheet" href="../Laje-s-ic-sd/assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <nav class="underline-nav">
-            <a href="./index.html">Home</a>
-            <a href="./autores.html">Autores</a>
-            <a href="./componentes.html">Componentes</a>
-            <a href="./montagem.html">Montagem</a>
-            <a href="./codigo.html">Código</a>
-            <a href="./extras.html">Extras</a>
-        </nav>
-        <h1>CÓDIGO FONTE</h1>
-    </header>
+  <header>
+    <nav class="underline-nav">
+      <a href="./index.html">Home</a>
+      <a href="./autores.html">Autores</a>
+      <a href="./componentes.html">Componentes</a>
+      <a href="./montagem.html">Montagem</a>
+      <a href="./codigo.html">Código</a>
+      <a href="./extras.html">Extras</a>
+    </nav>
+    <h1>CÓDIGO FONTE</h1>
+  </header>
 
-    <main>
-        <section id="codigo">
-            <h2>8. Exemplo do Código Arduino</h2>
-            <p>Abaixo está um trecho ilustrativo da lógica utilizada. O estilo visual abaixo facilita a leitura como em uma IDE.</p>
+  <main>
+    <section id="codigo">
+      <h2>Exemplo do Código Arduino 💻</h2>
+      <p>
+        Abaixo está um trecho ilustrativo da lógica utilizada.
+        Clique no botão para visualizar o código completo.
+      </p>
 
-            <pre><code>
+      <button id="btnCodigo" class="botao-codigo">
+        👁️ Mostrar Código
+      </button>
+
+      <pre id="blocoCodigo" class="codigo-arduino" style="display: none;"><code>
 // Exemplo simples de código Arduino
-int led = 13;
+#include &lt;Wire.h&gt;
+#include &lt;LiquidCrystal_I2C.h&gt;
 
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+// PINOS
+int sensorPin = A0;
+int buzzer = 9;
+
+// AJUSTES
+int minimoImpacto = 80;   // sensibilidade do piezo
+int maxLeitura   = 1023;  // valor máximo do analógico
+
+// RECORDE (0 a 999)
+int recorde = 0;
+
+// -------------------- SOM DE RECORDE --------------------
+void somDeRecorde() {
+  tone(buzzer, 500, 120);
+  delay(130);
+
+  tone(buzzer, 650, 120);
+  delay(130);
+
+  tone(buzzer, 800, 140);
+  delay(150);
+
+  tone(buzzer, 950, 160);
+  delay(170);
+
+  tone(buzzer, 1100, 180);
+  delay(190);
+
+  tone(buzzer, 950, 120);
+  delay(130);
+
+  tone(buzzer, 1250, 260);
+  delay(280);
+
+  noTone(buzzer);
+}
+
+// -------------------- SOM NORMAL --------------------
+void somNormal() {
+  tone(buzzer, 600, 120);
+  delay(140);
+
+  tone(buzzer, 800, 150);
+  delay(170);
+
+  noTone(buzzer);
+}
+
+// -------------------- MOSTRAR VALOR COM 3 DÍGITOS --------------------
+void print3dig(int valor) {
+  if (valor &lt; 10) {
+    lcd.print("00");
+  } 
+  else if (valor &lt; 100) {
+    lcd.print("0");
+  }
+
+  lcd.print(valor);
+}
+
+// -------------------- TELA PADRÃO --------------------
+void mostrarTelaRecorde() {
+  lcd.clear();
+
+  lcd.setCursor(0, 0);
+  lcd.print("FLICK FORCE");
+
+  lcd.setCursor(0, 1);
+  lcd.print("REC: ");
+  print3dig(recorde);
+}
+
+// -------------------- ANIMAÇÃO DO RECORDE SUBINDO --------------------
+void animarNovoRecorde(int antigo, int novo) {
+  lcd.clear();
+
+  lcd.setCursor(0, 0);
+  lcd.print("NOVO RECORDE!");
+
+  for (int i = antigo; i &lt;= novo; i++) {
+    lcd.setCursor(0, 1);
+    lcd.print("REC: ");
+    print3dig(i);
+    delay(15);   // velocidade da animação
+  }
+}
+
+// -------------------- SETUP --------------------
 void setup() {
-  pinMode(led, OUTPUT);
+  lcd.init();
+  lcd.backlight();
+  lcd.clear();
+
+  pinMode(buzzer, OUTPUT);
+
+  lcd.setCursor(0, 0);
+  lcd.print("FLICK FORCE");
+  delay(1500);
+
+  mostrarTelaRecorde();
 }
 
+// -------------------- LOOP --------------------
 void loop() {
-  digitalWrite(led, HIGH);
-  delay(1000);
-  digitalWrite(led, LOW);
-  delay(1000);
+  int leitura = analogRead(sensorPin);
+
+  if (leitura > minimoImpacto) {
+
+    delay(60); // anti-ruído
+
+    int nivelForca = map(leitura, minimoImpacto, maxLeitura, 0, 999);
+
+    if (nivelForca &lt; 0)   nivelForca = 0;
+    if (nivelForca > 999) nivelForca = 999;
+
+    bool novoRecorde = false;
+    int recordeAntigo = recorde;
+
+    if (nivelForca > recorde) {
+      recorde = nivelForca;
+      novoRecorde = true;
+    }
+
+    // SOM
+    if (novoRecorde) {
+      somDeRecorde();
+    } 
+    else {
+      somNormal();
+    }
+
+    // TELA DO IMPACTO
+    lcd.clear();
+
+    lcd.setCursor(0, 0);
+    if (novoRecorde) {
+      lcd.print("NOVO RECORDE!");
+    } 
+    else {
+      lcd.print("FORCA MEDIDA");
+    }
+
+    lcd.setCursor(0, 1);
+    lcd.print("NIVEL: ");
+    print3dig(nivelForca);
+
+    delay(1500);
+
+    // ANIMAÇÃO DO RECORDE SE FOR NOVO
+    if (novoRecorde) {
+      animarNovoRecorde(recordeAntigo, recorde);
+      delay(800);
+    }
+
+    // VOLTA PARA TELA PADRÃO
+    mostrarTelaRecorde();
+  }
 }
-            </code></pre>
+      </code></pre>
 
-            <p style="margin-top: 20px;">
-                <strong>Quer ver tudo?</strong><br>
-                Acesse o código completo e atualizado no nosso 
-                <a href="https://github.com/victornad/Laje-s-ic-sd" target="_blank" style="color: #d2691e; font-weight: bold;">repositório no GitHub</a>.
-            </p>
-        </section>
-    </main>
+      <p style="margin-top: 20px;">
+        <strong>Quer ver tudo?</strong><br>
+        Acesse o código completo e atualizado no nosso
+        <a href="https://github.com/victornad/Laje-s-ic-sd" target="_blank"
+          style="color: #d2691e; font-weight: bold;">repositório no GitHub</a>.
+      </p>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2024 - Laje’s | Projeto IC + SD | CESAR School</p>
-    </footer>
+  <footer>
+    <p>© 2025 - Laje’s | Projeto IC + SD | CESAR School</p>
+  </footer>
 
+  <script>
+    const btnCodigo = document.getElementById("btnCodigo");
+    const blocoCodigo = document.getElementById("blocoCodigo");
+
+    if (btnCodigo && blocoCodigo) {
+      btnCodigo.addEventListener("click", () => {
+        if (blocoCodigo.style.display === "none" || blocoCodigo.style.display === "") {
+          blocoCodigo.style.display = "block";
+          btnCodigo.textContent = "🙈 Ocultar Código";
+        } else {
+          blocoCodigo.style.display = "none";
+          btnCodigo.textContent = "👁️ Mostrar Código";
+        }
+      });
+    }
+  </script>
+</body>
 
 </html>
