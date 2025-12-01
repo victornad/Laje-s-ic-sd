@@ -320,3 +320,89 @@ a:hover {
 a:active {
     color: #cc5500;
 }
+
+/* =========================================
+   9. PETELECO INTERATIVO
+   ========================================= */
+.peteleco-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.peteleco-circulo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #f28b32;
+    background: #ffe1b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.peteleco-circulo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.peteleco-circulo.escondido {
+    display: none;
+}
+
+.autores-container {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.autores-container.visivel {
+    display: flex;
+}
+
+/* =========================================
+   10. BACKSTAGE
+   ========================================= */
+#backstage {
+    margin-top: 60px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#backstage h3 {
+    font-size: 28px;
+    color: #d8731e;
+    margin-bottom: 15px;
+}
+
+.texto-backstage {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.galeria-backstage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeria-backstage img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.galeria-backstage img:hover {
+    transform: scale(1.05);
+}

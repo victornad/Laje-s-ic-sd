@@ -22,6 +22,12 @@
         <h1>NOSSA EQUIPE</h1>
     </header>
 
+    <div class="peteleco-wrapper">
+        <button id="btnPeteleco" class="peteleco-circulo">
+            <span id="petelecoTexto">Dê o seu melhor peteleco para ver os AUTORES! 💥</span>
+        </button>
+    </div>
+
     <main>
         <section id="autores">
             <h2>Autores do Projeto ✒️</h2>
@@ -100,6 +106,40 @@
     <footer>
         <p>© 2025 - Laje’s | Projeto IC + SD | CESAR School</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btnPeteleco = document.getElementById("btnPeteleco");
+            const textoPeteleco = document.getElementById("petelecoTexto");
+            const autoresContainer = document.querySelector(".autores-container");
+
+            const RECORD_MAX = 100;
+            const INTERVALO = 20; 
+
+            btnPeteleco.addEventListener("click", function () {
+                btnPeteleco.disabled = true;
+
+                let valor = 0;
+
+                const timer = setInterval(() => {
+                    textoPeteleco.textContent = valor.toString().padStart(3, "0");
+                    valor++;
+
+                    if (valor > RECORD_MAX) {
+                        clearInterval(timer);
+
+                        textoPeteleco.textContent = "🥵 Recorde: " + RECORD_MAX;
+
+                        setTimeout(() => {
+                            autoresContainer.classList.add("visivel");
+
+                            btnPeteleco.classList.add("escondido");
+                        }, 1000);
+                    }
+                }, INTERVALO);
+            });
+        });
+    </script>
 
 </body>
 
