@@ -22,10 +22,6 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 
 ---
 
-## 🧩 Esquema Conceitual
-<img src="![Prótotipo Flick Force - Canva](https://github.com/user-attachments/assets/ecf3c75d-b05c-437f-83b3-e3f2ce464dc5)
-" width="600px" alt="Esquema conceitual do projeto">
-
 ---
 
 ## 🔑 Palavras-chave
