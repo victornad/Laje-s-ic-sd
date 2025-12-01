@@ -22,10 +22,8 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 
 ---
 
----
-
 ## 🔑 Palavras-chave
-`Arduino` · `Automação` · `Sensores` · `Sistemas Digitais` · `Tecnologia`
+`Arduino` · `Automação` · `Sensores` · `Sistemas Digitais` · `Tecnologia` · `Eletrônica` · `Física` · `Geometria`
 
 ---
 
@@ -45,7 +43,7 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 
 ## ⚙️ Componentes e Suprimentos
 
-| Componente | Descrição |
+| Componentes | Descrição |
 |-------------|------------|
 | 1x Placa Arduino UNO | Microcontrolador responsável pelo controle principal |
 | 1x Sensor de Batida Piezo | Transforma a batida em um sinal elétrico que o sistema pode interpretar. |
@@ -54,6 +52,14 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | 1x Displey LCD | Mostra os números. A “tela” onde o dispositivo mostra os dados de forma clara e visual |
 | 1x Buzzer | Emite sons ou alertas sonoros |
 | 1x Cabo USB | Usado para energia e troca de dados entre dispositivos |
+|-------------|------------|
+|Papel de parede | Utilizado para revestir o rolo de papel e as caixas, deixando o projeto com melhor acabamento visual. |
+| Rolo de papel | Estrutura base para a montagem do suporte do projeto. |
+| Caixas de isopor | Usadas para dar sustentação e formar parte da estrutura do protótipo. |
+| Caixa de sapato | Serviu como base principal para fixação dos componentes físicos. |
+| Cola quente | Utilizada para unir e fixar todas as partes do projeto de forma firme. |
+| Pêndulo de silicone | Responsável por produzir o impacto do peteleco no sistema. |
+| Barbante | Usado para suspender o pêndulo de silicone de forma estável. |
 
 ---
 
