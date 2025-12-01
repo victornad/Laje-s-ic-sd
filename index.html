@@ -19,11 +19,13 @@
 
     .card {
       background-color: rgba(255, 255, 255, 0.6);
-      border-left: 5px solid #d2691e; /* Detalhe na cor da identidade */
+      border-left: 5px solid #d2691e;
+      /* Detalhe na cor da identidade */
       border-radius: 8px;
       padding: 20px;
-      flex: 1 1 250px; /* Flexível: mínimo 250px de largura */
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      flex: 1 1 250px;
+      /* Flexível: mínimo 250px de largura */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
       text-align: left;
     }
 
@@ -44,17 +46,20 @@
     }
 
     .tag {
-      background-color: #d2691e; /* Cor principal */
+      background-color: #d2691e;
+      /* Cor principal */
       color: white;
       padding: 8px 16px;
-      border-radius: 20px; /* Borda redonda estilo pílula */
+      border-radius: 20px;
+      /* Borda redonda estilo pílula */
       font-size: 0.9rem;
       font-weight: bold;
       transition: transform 0.2s;
     }
 
     .tag:hover {
-      transform: scale(1.05); /* Efeito leve ao passar o mouse */
+      transform: scale(1.05);
+      /* Efeito leve ao passar o mouse */
       background-color: #a0522d;
     }
 
@@ -68,14 +73,14 @@
       margin-top: 10px;
       flex-wrap: wrap;
     }
-    
+
     .internal-menu a {
       color: #8b4513;
       text-decoration: none;
       font-size: 0.9rem;
       border-bottom: 1px dotted #8b4513;
     }
-    
+
     .internal-menu a:hover {
       color: #d2691e;
       border-bottom: 1px solid #d2691e;
@@ -96,41 +101,69 @@
 
     <h1>Laje’s - Projeto IC + SD</h1>
     <p style="max-width: 700px; margin: 0 auto;">
-      Documentação do projeto desenvolvido para as disciplinas de Introdução à Computação e Sistemas Digitais (CESAR School)
+      Documentação do projeto desenvolvido para as disciplinas de Introdução à Computação e Sistemas Digitais (CESAR
+      School)
     </p>
   </header>
 
   <main>
-    <section id="nome-projeto" style="text-align: center; border-bottom: 2px dashed #f4a460; padding-bottom: 20px; margin-bottom: 30px;">
+    <section id="nome-projeto"
+      style="text-align: center; border-bottom: 2px dashed #f4a460; padding-bottom: 20px; margin-bottom: 30px;">
       <h2 style="font-size: 2.5rem; color: #d2691e; margin: 10px 0;">Projeto LAJE’S</h2>
       <p>Medidor de Força de Peteleco - Flick Force 💥</p>
     </section>
 
     <section id="descricao">
-        <h2 style="text-align: center; margin-bottom: 30px;">Descrição do Projeto</h2>
-        
-        <div class="cards-container">
-          <div class="card">
-            <h3>💡 Motivação</h3>
-            <p>Demonstrar como a tecnologia pode transformar uma brincadeira simples em uma ferramenta de aprendizado e curiosidade científica.</p>
-          </div>
+      <h2 style="text-align: center; margin-bottom: 30px;">Descrição do Projeto</h2>
 
-          <div class="card">
-            <h3>🎯 Objetivo</h3>
-            <p>Criar um sistema interativo capaz de medir a força de um peteleco, unindo conceitos de interação física e eletrônica digital.</p>
-          </div>
-
-          <div class="card">
-            <h3>🌍 Contextualização</h3>
-            <p>Inserido nas áreas de eletrônica e educação, o projeto visa tornar o estudo de grandezas físicas (impacto) mais acessível e divertido.</p>
-          </div>
+      <div class="cards-container">
+        <div class="card">
+          <h3>💡 Motivação</h3>
+          <p>Demonstrar como a tecnologia pode transformar uma brincadeira simples em uma ferramenta de aprendizado e
+            curiosidade científica.</p>
         </div>
 
-        <div id="esquema" style="text-align: center; margin-top: 40px; background: rgba(255,255,255,0.5); padding: 20px; border-radius: 10px;">
+        <div class="card">
+          <h3>🎯 Objetivo</h3>
+          <p>Criar um sistema interativo capaz de medir a força de um peteleco, unindo conceitos de interação física e
+            eletrônica digital.</p>
+        </div>
+
+        <div class="card">
+          <h3>🌍 Contextualização</h3>
+          <p>Inserido nas áreas de eletrônica e educação, o projeto visa tornar o estudo de grandezas físicas (impacto)
+            mais acessível e divertido.</p>
+        </div>
+      </div>
+
+      <div id="galeria-esquema" style="
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background: rgba(255,255,255,0.5);
+  padding: 20px;
+  border-radius: 15px;
+">
+
+        <div style="text-align: center;">
           <h3 style="color: #444;">🧩 Esquema Conceitual</h3>
-          <p style="font-size: 0.9rem;">Conexão lógica entre os componentes do artefato:</p>
-          <img src="imagens/Arduino.png" alt="Esquema conceitual do projeto" style="max-width: 100%; border: 3px solid #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="imagens/Arduino.png" alt="Esquema conceitual do projeto"
+            style="max-width: 100%; width: 450px; border: 3px solid #fff; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+          <p style="font-size: 0.9rem;">Conexão lógica entre os componentes</p>
         </div>
+
+        <div style="text-align: center;">
+          <h3 style="color: #444;">🌀 Protótipo em Funcionamento</h3>
+          <img src="imagens/index foto.jpg" alt="Protótipo do Flick Force em funcionamento"
+            style="max-width: 100%; width: 450px; border: 3px solid #fff; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+          <p style="font-size: 0.9rem;">Aplicação prática do projeto</p>
+        </div>
+
+      </div>
+
     </section>
 
     <section id="palavras-chave" style="margin-top: 40px; text-align: center;">
@@ -141,6 +174,9 @@
         <li class="tag">#Sensor</li>
         <li class="tag">#Automação</li>
         <li class="tag">#SistemasDigitais</li>
+        <li class="tag">#Eletrônica</li>
+        <li class="tag">#Física</li>
+        <li class="tag">#Geometria</li>
       </ul>
     </section>
 
@@ -152,4 +188,5 @@
 
   <script src="assets/js/script.js"></script>
 </body>
+
 </html>

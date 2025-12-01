@@ -301,3 +301,22 @@ footer p {
     font-size: 14px;
     line-height: 1.5;
 }
+
+/* =========================================
+   8. DEIXAR ESTILIZADO OS AUTORES
+   ========================================= */
+
+a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ff6a00;
+}
+
+a:active {
+    color: #cc5500;
+}
