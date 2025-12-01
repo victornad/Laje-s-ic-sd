@@ -104,6 +104,10 @@ responde aos estímulos, se os dados são exibidos corretamente no display e se 
 9. Ajustes Finais:
 - Realize os ajustes de sensibilidade do sensor e dos tempos de resposta diretamente no código,
 conforme a necessidade prática do projeto, garantindo precisão e confiabilidade.
+10. Agora é hora de se divertir! 🎉
+- Explore o funcionamento do projeto, faça diferentes testes com o pêndulo e ajuste a sensibilidade do sensor
+e os tempos de resposta diretamente no código, de acordo com suas necessidades.
+Aproveite cada experimento e descubra, na prática, como a tecnologia pode ser precisa, confiável e divertida!
                     
 
 ---
