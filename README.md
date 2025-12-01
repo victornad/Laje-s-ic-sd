@@ -52,6 +52,8 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 | 1x Displey LCD | Mostra os números. A “tela” onde o dispositivo mostra os dados de forma clara e visual |
 | 1x Buzzer | Emite sons ou alertas sonoros |
 | 1x Cabo USB | Usado para energia e troca de dados entre dispositivos |
+
+| Materias | Descrição |
 |-------------|------------|
 |Papel de parede | Utilizado para revestir o rolo de papel e as caixas, deixando o projeto com melhor acabamento visual. |
 | Rolo de papel | Estrutura base para a montagem do suporte do projeto. |
@@ -75,12 +77,34 @@ Conheça nossa motivação! O objetivo e o contexto do nosso "Medidor de Força 
 
 ## 🪜 Passo a Passo da Montagem
 
-1. Conexão com o Computador:
-- Conecte o Arduino ao computador utilizando um cabo USB. Em seguida, abra a IDE, selecione a porta correta e carregue o código no microcontrolador;
-2. Testes de Funcionamento:
-- Após o carregamento do programa, execute os testes do sistema, verificando se o sensor responde aos estímulos, se os dados são exibidos corretamente no display e se o buzzer emite os sinais sonoros;
-3. Ajustes Finais:
-- Realize os ajustes de sensibilidade do sensor e dos tempos de resposta diretamente no código, conforme a necessidade prática do projeto, garantindo precisão e confiabilidade.
+1. Preparação da Base: 
+- Separe as caixas de isopor e a caixa de sapato que serão usadas como base do projeto. 
+Organize-as de forma que fiquem estáveis sobre a mesa, formando a estrutura onde o circuito e o pêndulo serão montados.
+2. Revestimento com Papel de Parede:
+- Revista a caixa de sapato e as caixas de isopor com o papel de parede, colando bem as bordas para não soltar. 
+Isso melhora o acabamento visual do protótipoe deixa o conjunto mais resistente.
+3. Instalação do Rolo de Papel:
+- Fixe o rolo de papel sobre a base já revestida, usando cola quente para deixá-lo firme.
+Ele servirá como suporte para o pêndulo e para complementar o design do projeto.
+4. Montagem do Suporte do Pêndulo:
+- Com o rolo de papel e a estrutura de caixas pronta, defina o ponto onde o pêndulo ficará
+suspenso. Passe o barbante pelo local escolhido (no rolo ou em um suporte extra) e deixe o fio com comprimento suficiente para o movimento do peteleco.
+5. Fixação do Pêndulo de Silicone:
+- Prenda o pêndulo de silicone na ponta do barbante, garantindo que fique bem seguro.
+Ajuste a altura para que o pêndulo bata exatamente na área onde o sensor vai capturar o impacto.
+6. Montagem do Circuito:
+- Realize a montagem de todos os componentes no protoboard de acordo com o esquema eletrônico
+proposto. Certifique-se de que todas as conexões estejam firmes e corretamente posicionadas.
+7. Conexão com o Computador:
+- Conecte o Arduino ao computador utilizando um cabo USB. Em seguida, abra a IDE,
+selecione a porta correta e carregue o código no microcontrolador.
+8. Testes de Funcionamento:
+- Após o carregamento do programa, execute os testes do sistema, verificando se o sensor
+responde aos estímulos, se os dados são exibidos corretamente no display e se o buzzer emite os sinais sonoros.
+9. Ajustes Finais:
+- Realize os ajustes de sensibilidade do sensor e dos tempos de resposta diretamente no código,
+conforme a necessidade prática do projeto, garantindo precisão e confiabilidade.
+                    
 
 ---
 
